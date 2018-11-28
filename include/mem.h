@@ -16,6 +16,8 @@ size_t strlen(const char *c);
 size_t strnlen(const char *c, size_t maxlen);
 int isalpha(int c);
 int isdigit(int c);
+char toupper(char c);
+char tolower(char c);
 char *strncpy(char *dest, const char *src, size_t max);
 char *strcpy(char *dest, const char *src);
 int strcmp(const char *s1, const char *s2);

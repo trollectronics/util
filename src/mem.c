@@ -74,6 +74,20 @@ int isdigit(int c) {
 	return 0;
 }
 
+char toupper(char c) {
+	if(c >= 'a' && c <= 'z')
+		c -= 'a' - 'A';
+		
+	return c;
+}
+
+char tolower(char c) {
+	if(c >= 'A' && c <= 'Z')
+		c += 'a' - 'A';
+		
+	return c;
+}
+
 char *strncpy(char *dest, const char *src, size_t max) {
 	size_t i;
 
